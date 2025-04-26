@@ -1,0 +1,193 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Skate City Portfolio</title>
+  <style>
+    @font-face {
+      font-family: 'UrbanBold';
+      src: url('https://fonts.gstatic.com/s/bebasneue/v9/JTUSjIg1_i6t8kCHKm459WlhzQ.ttf');
+    }
+
+    body {
+      font-family: 'UrbanBold', sans-serif;
+      background-color: #f9f9f9;
+      margin: 0;
+      padding: 0;
+      color: #222;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    header {
+      background-color: #1e1e2f;
+      text-align: center;
+      width: 100%;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 40px 10px;
+      color: #f5f5f5;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    header h1 {
+      font-size: 48px;
+      letter-spacing: 3px;
+      margin: 0;
+    }
+
+    header h2 {
+      font-weight: normal;
+      font-size: 20px;
+      margin-top: 10px;
+      color: #d4d4d4;
+    }
+
+    .grid {
+      display: grid;
+      grid-auto-flow: row;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(3, auto);
+      gap: 20px;
+      row-gap: 100px;
+      column-gap: 40px;
+      padding: 0 20px;
+      max-width: 1200px;
+      margin: 40px auto;
+    }
+
+    .box {
+      width: 100%;
+      background-color: #fff;
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      padding: 12px;
+      transition: all 0.3s ease-in-out;
+    }
+
+    .box:hover {
+      transform: scale(1.05);
+    }
+    
+    .box audio, .box.video {
+      background-color: #fff8e1;
+      border: 2px solid #ffd54f;
+      animation: floaty 4s infinite ease-in-out;
+    }
+
+    .box img, .box video {
+      max-width: 90%;
+      max-height: 160%;
+      border-radius: 8px;
+    }
+
+    .box audio {
+      width: 100%;
+      margin-top: 10px;
+    }
+    
+    .box:nth-child(1) {
+      background-color: #e0f7fa;
+      transform: rotate(-1deg);
+    }
+
+    .box:nth-child(2) {
+      background-color: #ffe0b2;
+    }
+
+    .box:nth-child(3) {
+      background-color: #e1bee7;
+      opacity: 0.95;
+    }
+
+    .box:nth-child(4) {
+      background-color: #c8e6c9;
+    }
+
+    .box:nth-child(5) {
+      background-color: #dcedc8;
+      transform: rotate(1deg);
+    }
+
+    .box:nth-child(6) {
+      background-color: #f8bbd0;
+    }
+
+    .box:nth-child(7) {
+      background-color: #d1c4e9;
+    }
+
+    .box:nth-child(8) {
+      background-color: #b3e5fc;
+    }
+
+    .box:nth-child(9) {
+      background-color: #f5f5f5;
+      border: 2px dashed #ccc;
+    }
+
+    .caption {
+      font-size: 14px;
+      color: #444;
+      padding: 8px 12px;
+      margin-top: 8px;
+      text-align: center;
+      font-family: sans-serif;
+      line-height: 1.4;
+    }
+
+    .fallback {
+      background-color: #ffeeee;
+      padding: 10px;
+      border-radius: 8px;
+      color: #b22222;
+      font-weight: bold;
+      font-size: 14px;
+      text-align: center;
+      margin-top: 10px;
+      font-family: sans-serif;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>SKATE CITY</h1>
+    <h2>Portfolio by Khanh (Tina) Le</h2>
+  </header>
+
+  <div class="grid">
+    <!-- ROW 1 -->
+    <div class="box"><img src="thumbnail1.png" alt="Thumbnail 1"><div class="caption">This project was a YouTube thumbnail made using Adobe Photoshop because it was quick for layering and text. I learned how to balance images and bold fonts for small screens, and it challenged me to focus on clear design over decoration.</div></div>
+    <div class="box video">
+      <video controls>
+        <source src="videoProject.mp4" type="video/mp4">
+      </video>
+      <div class="caption">🎬 This short video was edited in Adobe Premiere because it offered flexible tools for cutting and transitions. I learned to match timing and visual flow. It was tricky initially, but I liked seeing how editing choices changed the mood.</div>
+    </div>
+    <div class="box"><img src="thumbnail2.png" alt="Thumbnail 2"><div class="caption">This energetic thumbnail was created in Adobe Photoshop to highlight strong colors and motion. I experimented with high-contrast visuals, and I learned how important fast visual impact is to catch a viewer’s attention.</div></div>
+    
+    <!-- ROW 2 -->
+    <div class="box"><img src="thumbnail3.png" alt="Thumbnail 3"><div class="caption">This project was a minimal-style thumbnail made with Adobe Photoshop, which helped me keep a clean layout. It was initially difficult to leave extra space, but I learned that simple designs can communicate ideas more powerfully.</div></div>
+    <div class="box audio">
+      <audio controls>
+        <source src="audioProject.mp3" type="audio/mpeg">
+      </audio>
+      <div class="caption">🎵 I created this audio piece using Adobe Audition for its easy layering and sound effects. Balancing background sounds was difficult initially, but I learned how small adjustments made the final project sound more professional.</div>
+      </div>
+      <div class="box"><img src="logo1.png" alt="Logo 1"><div class="caption">This brand logo was created in Adobe Illustrator because it offered precision with vector shapes. I learned to simplify complicated ideas into basic symbols, which was harder than expected but very rewarding.</div></div>
+  
+      <!-- ROW 3 -->
+      <div class="box"><img src="logo2.png" alt="Logo 2"><div class="caption">This playful logo was designed using Adobe Illustrator for its flexible typography tools. I learned how color and letter style can completely change a brand’s feeling, and it taught me to design with emotion.</div></div>
+      <div></div>
+      <div class="box"><img src="logo3.png" alt="Logo 3"><div class="caption">This professional logo was made in Adobe Illustrator because it gave me fine control for minimal layouts. Designing something simple but strong was challenging, but I learned that clean lines leave the biggest impact.</div></div>
+  </div>
+</body>
+</html>
